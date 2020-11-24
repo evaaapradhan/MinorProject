@@ -1,0 +1,527 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+;
+}
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;/* to make bold */
+    color: #606060;
+}
+
+.extra-div h2, .servicediv h2{
+    font-size: 0.9rem;/* 1px=0.0625rem; 1inch=96px */
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+}
+
+i{
+    color: #2fccd0;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('/images/rectanglebg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0 75%,  0 0);/*to display polygon shape*/
+    position: relative;
+}
+
+.header:before{
+content: "";
+position: absolute;
+top: 0%;
+bottom: 0%;
+left: 0;
+right: 0;
+opacity: .4;
+z-index: -1; /*used so that opacity will not be included in text*/
+background: linear-gradient(to right, #969faa 0%, #366b96 0%, #0d47b3 100%);
+}
+
+
+.navbar::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: .4;
+    z-index: -1;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);/* to change color from left to right */
+}
+
+
+/* to display all items of nav-bar in white and bold*/
+.nav-item a{
+    color: #fff!important;
+    font-weight: bold;
+}
+/* to display park esay in middle*/
+.header-section{
+    width: 100%;
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+
+.center-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /*  */
+    -ms-transform: translate(-50%, -50%);/* for microsoft*/
+    -webkit-transform: translate(-50%, -50%); /*for safari, chrome etc.*/
+}
+
+.header-buttons a{
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.header-buttons a:hover{
+    color: #03332d;/*changing color of about us and contact*/
+    background: #fff;
+    text-decoration: null;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+/*to change mark your park*/
+.center-div p{
+    font-size: 20px;
+    padding: 10px 0 20px 0;
+    color: #fff;
+
+}
+/*********************extra header div starts***************/
+
+.header-extradiv{
+    width:100%;
+    height: auto;
+    margin: 100px 0 100px 0;
+    text-align: center;
+}
+
+.extra-div{
+    background: #fff;
+    border: medium none;
+    padding: 50px!important;
+    border-radius: 3px;
+    transition: 0.3s;
+    left: 17%;
+}
+
+.extra-div:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    transform: translateY(-20px);
+}
+
+/**********************extra header div ends******************/
+
+/****************************available parking space section starts*****************/
+
+.spaces-available{
+    background: #f7f7f9;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.heading{
+    margin-bottom: 50px;
+}
+
+.heading h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.names h1{
+    color: #2e2e2e;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: bold; 
+
+
+}
+.price-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress{
+    height: 0.6rem!important;
+    margin-bottom: 25px!important;
+    background: #606060;
+
+
+}
+/****************************available parking space section ends*****************/
+
+
+/**************************** available parking slots starts*****************/
+
+.display {
+    margin-top: 100px 0;
+}
+
+.display h1{
+    font-size: 2rem;
+    text-align: center;
+    
+}
+
+/****************************available parking slots ends*****************/
+
+/*******************************Our pricing starts********************/
+
+.pricing-offers{
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+}
+
+.pricing-offers:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    z-index: -1;;
+    background: linear-gradient(160deg, #16c9f6 55%, #fff 0%);/* to make background of our pricing part  .. we took blue and white color*/
+}
+
+.card{
+    transition: 0.4s ease;
+}
+
+.money{
+    font-size: 30px;
+    line-height: 1;
+    color: #606060;
+}
+
+.card-header{
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: white!important;
+    padding: 25px 0!important;
+}
+
+.card-body{
+    padding: 30px 0px!important;
+    color: #606060;
+}
+
+.card-body li{
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    
+}
+
+.card-footer{
+    background: white!important;
+    padding: 30px 0px!important;
+    
+}
+
+.card:hover .card-footer a{
+    border: 1px solid #50d1c0;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color:#50d1c0;
+    font-size: 1rem;
+
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;   
+}
+
+.card-footer a:hover{
+    color: #fff;
+    
+    text-decoration: null;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+/* to move card upward on hovering */
+.card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+.card:hover .card-header, .card:hover .money{
+    color: #50d1c0;
+} 
+
+.card-second{
+    transform: translateY(-20px);
+    
+}
+/********************************Our pricing ends*********************/
+
+
+
+/* ******************login starts************************** */
+
+
+
+:root {
+    --input-padding-x: 1.5rem;
+    --input-padding-y: .75rem;
+  }
+  
+ 
+  
+  .card-signin {
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .card-signin .card-title {
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+  
+  .card-signin .card-img-left {
+    width: 45%;
+    /* Link to your background image using in the property below! */
+    background: scroll center url('/images/circlebg.jpg');;
+    background-size: cover;
+  }
+  
+  .card-signin .card-body {
+    padding: 2rem;
+  }
+  
+  .form-signin {
+    width: 100%;
+  }
+  
+  .form-signin .btn {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    transition: all 0.2s;
+  }
+  
+  .form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  .form-label-group input {
+    height: auto;
+    border-radius: 2rem;
+  }
+  
+  .form-label-group>input,
+  .form-label-group>label {
+    padding: var(--input-padding-y) var(--input-padding-x);
+  }
+  
+  .form-label-group>label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    /* Override default `<label>` margin */
+    line-height: 1.5;
+    color: #495057;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: all .1s ease-in-out;
+  }
+  
+  .form-label-group input::-webkit-input-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input:-ms-input-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input::-ms-input-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input::-moz-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input::placeholder {
+    color: transparent;
+  }
+  .form-label-group input:not(:placeholder-shown) {
+    padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+    padding-bottom: calc(var(--input-padding-y) / 3);
+  }
+  
+  
+  .form-label-group input:not(:placeholder-shown)~label {
+    padding-top: calc(var(--input-padding-y) / 3);
+    padding-bottom: calc(var(--input-padding-y) / 3);
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .btn-google {
+    color: rgb(69, 94, 207)!important;
+    background-color: #ea4335;
+  }
+
+
+/* ********************login ends*********************** */
+
+
+
+
+
+/**************************Contact Us starts*******************/
+
+.contact-us{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+    position: relative;
+}
+
+.contact-us:before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right:0;
+    background: linear-gradient(330deg, #16c9f6 55%, #fff 0%);
+    z-index: -1;
+}
+
+.form-button button{
+    border: 1px solid #50d1c0;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color:#50d1c0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    background: transparent;
+}
+
+.form-button button:hover{
+    color:#50d1c0;
+}
+
+form:hover .form-button button{
+    background: #fff;
+    color: 50d1c0;
+    box-shadow: (0 0 20px 0 rgba(0,0,0,0.3));
+}
+
+/* to change text written in placeholder */
+::placeholder{
+    font-size: 0.85rem;
+}
+
+/****************************Contact Us ends**********************/
+
+/********************Subscribe to our app starts****************/
+
+.subscribe{
+    width: 100%;
+    height: auto;
+    margin: 80px auto;
+}
+
+.subscribediv{
+    border-radius: 100px 0px 0px 100px!important;
+    min-width: 150px;
+    min-height: 45px;
+}
+
+.input-group-text{
+    color: #fff!important;
+    background: #5bc0de!important;
+    border-radius: 0 100px 100px 0!important;
+    min-width: 130px;
+    min-height: 40px;
+}
+
+/***********************Subscribe to our app ends*************/
+
+
+
+
+/**********************Goto top button starts**************/
+
+#myBtn {
+    display: none;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 40px; /* Place the button 40px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(17, 160, 196); /* Set a background color */
+    color: white; /* Text color */
+    background: #00abff;
+    padding: 10px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    
+  }
+  
+  #myBtn:hover{
+      background: #606060;
+
+  }
+  
+
+/**********************Goto top button ends*******************/
