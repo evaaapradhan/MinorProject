@@ -1,0 +1,53 @@
+<%- include header.ejs %>
+
+<section class="adminlogin" id="adminlogin">
+    <div class="container heading text-center">
+        <h1 class="text-center font-wight-bold"> Signin for Admin </h1>
+        <p class="text-capitalize pt-1"> Please sign in to access your details!</p>
+     </div>
+
+    <div class="login">
+        <div class="row">
+            <div class="col-lg-10 col-xl-9 mx-auto">
+                <div class="card card-signin flex-row my-5">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Sign In </h5>
+                        <form class="form-signin">
+                        <div class="form-label-group">
+                            <input type="text" id="inputUserame" class="form-control" placeholder="Username" required autofocus>
+                            <!-- autofocus garera username ma pugeko -->
+                            <label for="inputUserame">Username</label>
+                        </div>
+            
+                        <div class="form-label-group">
+                            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                            <label for="inputEmail">Email address</label>
+                        </div>
+                        
+                        <hr>
+            
+                        <div class="form-label-group">
+                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                            <label for="inputPassword">Password</label>
+                        </div>
+                        
+                        <div class="form-label-group">
+                            <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Password" required>
+                            <label for="inputConfirmPassword">Confirm password</label>
+                        </div>
+            
+                        <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Log In</button>
+                        
+                        <hr class="my-4">
+                        
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>    
+
+</body>
+</html>

@@ -7,11 +7,15 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/admin', function(req, res, next) {
-  res.render('login', { title: 'login' });
+  res.render('adminregister', { title: 'login' });
 });
 
 router.get('/booking', function(req, res, next) {
   res.render('booking', { title: 'Book your space' });
+});
+
+router.get('/signin', function(req, res, next) {
+  res.render('adminlogin', { title: 'Admin Signin' });
 });
 
 module.exports = router;

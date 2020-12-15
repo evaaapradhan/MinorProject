@@ -1,0 +1,79 @@
+
+<%- include header.ejs %>
+    <meta charset="UTF-8">
+    <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  
+  <body>
+      <!-- <div class="splash-screen" id="splashscreenid">
+        <div class="nav-bar-container">
+            <div class="nav-wrapper">
+                <div class="left-side">
+                    <div class="nav-link-wrapper">
+                        <a href="html/index1.html"> User </a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="admin.html"> Admin login </a>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="brand">
+                        <div>ParkEasy</div>
+                    </div>
+                </div>
+            </div>
+      </div> -->
+
+      <section class="signup/login" id="signup/login">
+        <div class="container heading text-center">
+            <h1 class="text-center font-wight-bold"> Hello! Are you the Admin? </h1>
+            <p class="text-capitalize pt-1">Have you signed up? If yes Login and if no then please Signup! </p>
+         </div>
+         <div class="login">
+            <div class="row">
+                <div class="col-lg-10 col-xl-9 mx-auto">
+                    <div class="card card-signin flex-row my-5">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Register for admin</h5>
+                            <form class="form-signin">
+                            <div class="form-label-group">
+                                <input type="text" id="inputUserame" class="form-control" placeholder="Username" required autofocus>
+                                <!-- autofocus garera username ma pugeko -->
+                                <label for="inputUserame">Username</label>
+                            </div>
+                            <div class="form-label-group">
+                                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                                <label for="inputEmail">Email address</label>
+                            </div>
+                            <div class="form-label-group">
+                                <input type="text" id="inputParkingplace" class="form-control" placeholder="Parking place " required>
+                                <label for="inputParkingPlace">Parking Place Name</label>
+                            </div>
+                            <hr>
+                
+                            <div class="form-label-group">
+                                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                                <label for="inputPassword">Password</label>
+                            </div>
+                            
+                            <div class="form-label-group">
+                                <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Password" required>
+                                <label for="inputConfirmPassword">Confirm password</label>
+                            </div>
+                
+                            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Register</button>
+                            <a class="d-block text-center mt-2 big" href="/signin">Sign In</a>
+                            <hr class="my-4">
+                        
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+      </section>
+      
+  </body>
