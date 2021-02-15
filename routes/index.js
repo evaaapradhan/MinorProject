@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+// let Parking = require('../models/admininfo');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {

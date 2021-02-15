@@ -3,14 +3,21 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+// var mongoose =  require ('mongoose');
 
 
 var bodyParser =  require('body-parser'); //newlyadded
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+// var {authUser} = require('./authforuser')
 
 var app = express();
+
+// mongoose.connect('mongodb://localhost/parkeasyDB', 
+// { useNewUrlParser: true, useUnifiedTopology: true }, 
+// () => { console.log('connected to db') });
+// var mongoose = require('mongoose');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
